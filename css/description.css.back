@@ -1,0 +1,147 @@
+/*  MOBILE  */
+
+main#description section {
+    height: 33%;
+    width: 100%;
+    text-align: left;
+}
+
+main#description article {
+    width: 95%;
+    text-align: center;
+    padding: 1%;
+    margin: 0 auto;
+}
+
+main#description article ul {
+    text-align: left;
+}
+
+main#description img.image-album {
+    width: 50%;
+    height: 220px;
+    border-radius: 10px;
+}
+
+main#description img.image-album:hover {
+    transform: scale(1.01);
+}
+
+main#description h2 {
+    font-size: 1.8em;
+    text-shadow: 4px 4px 4px black;
+    margin: 2%;
+    padding: 2%;
+}
+
+main#description h3 {
+    text-shadow: 4px 4px 4px black;
+}
+
+main#description h4 {
+    font-size: 1.1em;
+    text-shadow: 4px 4px 4px black;
+}
+
+main#description audio {
+    height: 40px;
+    width: 90%;
+    transition: 0.5s;
+}
+
+main#description li {
+    display: block;
+    height: 50px;
+    text-shadow: 4px 4px 4px black;
+    padding: 2%;
+    margin: 2%;
+    width: 80%;
+}
+
+main#description iframe {
+    width: 50%;
+    box-shadow: 4px 4px 4px black;
+}
+
+main#description article#presentation {
+    width: 90%;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+main#description article img {
+    box-shadow: 4px 4px 4px black;
+}
+
+main#description div#wrap section {
+    height: 62px;
+    overflow: hidden;
+}
+
+main#description #wrap section:hover {
+    height: 100%;
+}
+
+main#description #wrap section:target {
+    height: 100%;
+}
+
+main#description div#wrap h2 {
+    border-radius: 10px;
+    background-color: rgb(134, 129, 129, 1.5);
+}
+
+main#description video {
+    width: 25%;
+    height: 200px;
+}
+
+/*  TABLETTE  */
+
+@media only screen and (min-width:639px) {
+    main#description div#wrap {
+        width: 100%;
+        margin: auto;
+    }
+    main#description div#wrap section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+    main#description div#wrap article:nth-of-type(1) {
+        width: 44%;
+        margin: 1%;
+        height: 300px;
+    }
+    main#description div#wrap article:nth-of-type(2) {
+        width: 44%;
+        margin: 1%;
+        overflow: scroll;
+        height: 300px;
+        overflow: auto;
+    }
+    main#description div#wrap article:nth-of-type(3) {
+        width: 93%;
+        padding: 1%;
+    }
+    main#description div#wrap h2 {
+        height: 20px;
+        width: 90%;
+        margin: 2;
+        padding: 1%;
+    }
+    main#description div.videos {
+        overflow: scroll;
+        display: flex;
+        overflow: auto;
+    }
+    main#description div.videos iframe {
+        margin: 2%;
+    }
+}
+
+/*  DESKTOP  */
+
+@media only screen and (min-width:959px) {}

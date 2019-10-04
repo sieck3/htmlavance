@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="css/mask.css">
+    <!--<link rel="stylesheet" href="css/contact.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <img id="grandgroupe" src="images/bigband.jpg" alt="img">
+        <img id="petitgroupe" src="images/littleband.jpg" alt="img">
+        <h1>Black Rebel Motorcycle Club</h1>
+    </header>
+
+    <nav>
+        <form>
+            <input type="text" name="recherche" placeholder="Recherche">
+            <input type="submit" value="Rechercher">
+        </form>
+        <a href="accueil.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="description.html">Description</a>
+        <a href="contact.html" class="target">Contact</a>
+    </nav>
+
+    <main id="contact">
+
+        <!--  INSÉREZ ICI LE CONTENU DE VOTRE PAGE  -->
+        <form>
+            <h2>Formulaire de contact</h2>
+            <div>
+                <label for="lastName">Nom</label>
+                <input class="formulaire" type="text" id="lastName" name="nomdefamille" placeholder="Nom" required maxlength="50" autofocus />
+            </div>
+            <div>
+                <label for="firstName">Prénom</label>
+                <input class="formulaire" type="text" id="firstName" name="firstName" placeholder="Prénom" required maxlength="50" />
+            </div>
+            <div>
+                <label for="userPhone">Téléphone</label>
+                <input class="formulaire" type="tel" id="userPhone" name="userPhone" placeholder="514-888-9999" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" required />
+            </div>
+
+            <div>
+                <label for="userEmail">Courriel</label>
+                <input class="formulaire" type="email" id="userEmail" name="userEmail" placeholder="Courriel" required maxlength="100" />
+            </div>
+
+            <div class="adressecomplete">
+                <div class="adresse"> <label for="numero">No</label>
+                    <input class="num" type="number" id="numero" name="civicnum" placeholder="55" required>
+                </div>
+
+                <div class="civic">
+                    <label class="rue" for="rue">Rue</label>
+                    <input type="text" id="rue" name="uneadresse" placeholder="9e Avenue" required maxlength="50" />
+                </div>
+            </div>
+            <div>
+                <label for="ville">Ville</label>
+                <input class="formulaire" type="text" id="ville" name="city" placeholder="Montreal" required maxlength="50" />
+            </div>
+            <div class="province">
+                <label for="province">Province</label>
+                <input class="formulaire" type="text" id="province" name="laprovince" placeholder="Québec" required maxlength="50" />
+            </div>
+            <div class="radio">
+                <div>
+                    <label>Male</label>
+                    <input type="radio" name="gender" value="male">
+                </div>
+                <div>
+                    <label>Female</label>
+                    <input type="radio" name="gender" value="female">
+                </div>
+            </div>
+            <div class="checkb">
+                <div><label>J'accepte les politique du site</label><input type="checkbox" name="condition" value="politique"></div>
+                <div><label>Voulez-vous recevoir des nouvelle V.I.P?</label><input type="checkbox" name="news" value="nouvelle">
+                </div>
+            </div>
+
+            <textarea placeholder="commentaire" rows="4" cols="43"></textarea>
+            <!--addresse -->
+            <div>
+                <input type="submit" value="Soumettre" />
+            </div>
+
+        </form>
+
+        <aside><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.30274337095!2d-73.6428947856174!3d45.5442350791019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc918e0c061b07f%3A0x647a6b6d7cb681a7!2sISI%2C+l&#39;Institut+sup%C3%A9rieur+d&#39;informatique!5e0!3m2!1sfr!2sca!4v1561040794465!5m2!1sfr!2sca" allowfullscreen>
+            </iframe>
+        </aside>
+    </main>
+
+    <footer>
+        <div id="social">
+            <figure>
+                <img src="https://fr.facebookbrand.com/wp-content/uploads/2016/05/flogo_rgb_hex-brc-site-250.png" alt="src" class="logo">
+                <figcaption><a href="https://www.facebook.com/BRMCOfficial/">facebook</a></figcaption>
+            </figure>
+            <figure>
+                <img src="https://instagram-brand.com/wp-content/uploads/2016/11/app-icon2.png" alt="src" class="logo">
+                <figcaption><a href="https://www.instagram.com/brmcofficial/">instagram</a></figcaption>
+            </figure>
+            <figure>
+                <img src="images/logo_twitter_square.png" alt="src" class="logo">
+                <figcaption><a href="https://twitter.com/BRMCofficial/">twitter</a></figcaption>
+            </figure>
+        </div>
+        <div>
+            <img id="logo" src="images/logo.png" alt="logo">
+        </div>
+        <div id="legal">
+            <label id="copyright">© Black Rebel Motorcycle Club 2016</label>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+/*  MOBILE  */
+
+main#catalogue section {
+    height: 33%;
+    width: 99%;
+}
+
+main#catalogue article {
+    width: 98%;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+}
+
+main#catalogue article img:hover {
+    transform: scale(1.01);
+    font-size: 4em;
+}
+
+main#catalogue div.chancons {
+    visibility: hidden;
+    height: 0;
+}
+
+main#catalogue article:hover div.chancons {
+    height: 80%;
+    visibility: visible;
+    transform: scale(1);
+    transition: 2s linear;
+}
+
+main#catalogue h3:hover {
+    transform: scale(1.01);
+    font-size: 1.2em;
+}
+
+main#catalogue img.image-album {
+    width: 40%;
+    height: 100%;
+    margin: 2% auto;
+    border-radius: 10%;
+    box-shadow: 4px 4px 4px black;
+}
+
+/*title d'album*/
+
+main#catalogue h3 {
+    width: 40%;
+    height: 3em;
+    text-shadow: 4px 4px 4px black;
+    margin: 0 auto
+}
+
+main#catalogue ul {
+    list-style: none;
+}
+
+main#catalogue li {
+    height: 5%;
+    width: 80%;
+    margin: 2%;
+    text-shadow: 4px 4px 4px black;
+}
+
+main#catalogue div.chancos {
+    width: 50%;
+    margin: 0 auto;
+}
+
+main#catalogue audio {
+    height: 40px;
+    width: 40%;
+    transition: 0.5s linear;
+}
+
+main#catalogue audio:hover {
+    width: 100%;
+}
+
+main#catalogue section a {
+    text-decoration: none;
+    color: white;
+}
+
+main#catalogue iframe {
+    width: 60%;
+    height: 100%;
+    margin: 2%;
+    box-shadow: 4px 4px 4px black;
+}
+
+main#catalogue iframe:hover {
+    /* transform: scale(1.01);*/
+    font-size: 48px;
+}
+
+/*  TABLETTE  */
+
+@media only screen and (min-width:639px) {
+    main#catalogue section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+        width: 95%;
+    }
+    main#catalogue article {
+        height: 100%;
+        width: 300px;
+        margin: 5px;
+        margin: 4px;
+    }
+    main#catalogue h2 {
+        height: 20px;
+        width: 90%;
+        margin: 5px;
+    }
+    main#catalogue h3 {
+        font-size: 1em;
+    }
+    main#catalogue audio:hover {
+        width: 40%;
+    }
+    main#catalogue h3:hover {
+        font-size: 1em;
+    }
+    main#catalogue iframe {
+        width: 95%;
+        height: 100%;
+    }
+}
+
+/*  DESKTOP  */
+
+@media only screen and (min-width:959px) {
+    main#catalogue section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: left;
+    }
+    main#catalogue article {
+        height: 80%;
+        width: 300px;
+        margin: 2px;
+    }
+    main#catalogue h2 {
+        height: 20px;
+        width: 100%;
+        margin: 6px;
+    }
+}

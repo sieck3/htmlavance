@@ -1,0 +1,200 @@
+/*  MOBILE  */
+
+main#contact {
+    width: 100%;
+}
+
+main#contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main#contact div>label {
+    display: block;
+}
+
+main#contact input {
+    display: block;
+    width: 100%;
+    background-color: black;
+    border: solid 1px white;
+}
+
+main#contact div.civic {
+    display: inline-block;
+    width: 65%;
+}
+
+main#contact div.adresse {
+    display: inline-block;
+    width: 27%;
+}
+
+main#contact div.adressecomplete {
+    display: flex;
+    justify-content: space-between;
+}
+
+main#contact form>div {
+    padding-top: 15px;
+}
+
+main#contact div.radio {
+    width: 100%;
+}
+
+main#contact div.radio label {
+    display: inline-block;
+}
+
+main#contact div.radio input {
+    display: inline-block;
+    width: auto;
+}
+
+main#contact div.checkb {
+    width: 100%;
+}
+
+main#contact div.checkb label {
+    display: inline-block;
+}
+
+main#contact div.checkb input {
+    display: inline-block;
+    width: auto;
+}
+
+main#contact input, main#contact select, main#contact textarea {
+    color: white;
+}
+
+main#contact textarea {
+    background-color: black;
+}
+
+main#contact input[type=submit] {
+    width: 25%;
+}
+
+main#contact iframe {
+    width: 100%;
+}
+
+/*  TABLETTE  */
+
+@media only screen and (min-width:639px) {
+    main#contact form>div:nth-of-type(-n+7) {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    main#contact div>label:nth-of-type(-n+5) {
+        width: 20%;
+    }
+    main#contact div>input {
+        width: 80%;
+    }
+    main#contact .adressecomplete>div {
+        display: flex;
+    }
+    main#contact .civic>label {
+        width: 20%;
+        padding-left: 20%;
+    }
+    main#contact div.adresse {
+        width: 40%;
+    }
+    main#contact div.adresse>label {
+        width: 50%;
+    }
+    main#contact div.adresse>input {
+        width: 50%;
+    }
+    main#contact div.civic {
+        width: 60%;
+    }
+    main#contact .province>input {
+        display: flex;
+        width: 80%;
+    }
+    main#contact .checkb>div {
+        padding-top: 3%;
+    }
+    main#contact .checkb>div:nth-child(2) {
+        padding-bottom: 3%;
+    }
+}
+
+/*  DESKTOP  */
+
+@media only screen and (min-width:959px) {
+    main#contact form {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+    main#contact h2 {
+        width: 100%;
+    }
+    main#contact form>div {
+        width: 45%;
+    }
+    main#contact form>div>label {
+        margin-right: 0%;
+        margin-left: 5%;
+    }
+    main#contact form>div.adressecomplete {
+        width: 100%;
+        justify-content: unset;
+    }
+    main#contact form>div.adressecomplete>div {
+        width: 45%;
+    }
+    main#contact div.adresse {
+        width: 50%;
+        display: flex row;
+        justify-content: space-between;
+    }
+    main#contact div.adresse>label {
+        width: 5%;
+        margin-left: 5.5%;
+    }
+    main#contact div.adresse>input {
+        width: 75.5%;
+        /*margin-left: 5%;*/
+    }
+    main#contact div>.civic {
+        width: 45%;
+        display: flex row;
+        justify-content: space-between;
+    }
+    main#contact div.civic>label {
+        width: 3%;
+        margin-left: 5.5%;
+        padding: 0;
+    }
+    main#contact div.civic>input {
+        width: 75.5%;
+    }
+    main#contact div.radio {
+        height: 20%;
+    }
+    main#contact div.radio>div>label {
+        width: 9.5%;
+    }
+    main#contact div.checkb {
+        width: 50%;
+    }
+    main#contact div.checkb>input {
+        width: 50%;
+    }
+    main#contact text-area {
+        float: left;
+    }
+    main#contact input[type=submit] {
+        margin: auto;
+    }
+}
